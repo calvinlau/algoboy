@@ -1,6 +1,10 @@
 * list
-  * fast/slow
-  * backtracking
+  * Method
+    * fast/slow
+    * backtracking
+  * Remove Linked List Elements
+  * Delete Node in a Linked List
+  * Merge Two Sorted Lists
 
 * tree
 

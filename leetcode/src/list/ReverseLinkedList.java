@@ -28,7 +28,7 @@ public class ReverseLinkedList {
 		head.next = null;
 		return pre;
     }
-    
+
     public ListNode reverseList_2(ListNode head) {
 		if (head == null || head.next == null)
 			return head;

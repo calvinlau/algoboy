@@ -12,7 +12,7 @@ import base.ListNode;
  */
 public class MergeTwoSortedLists {
 
-	public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		ListNode head = new ListNode(0);
 		ListNode cur = head;
 		while (l1 != null && l2 != null) {
