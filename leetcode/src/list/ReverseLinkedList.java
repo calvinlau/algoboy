@@ -30,8 +30,9 @@ public class ReverseLinkedList {
     }
 
     public ListNode reverseList_2(ListNode head) {
-		if (head == null || head.next == null)
+		if (head == null || head.next == null) {
 			return head;
+		}
 		ListNode second = head.next;
 		head.next = null;
 		ListNode rest = reverseList_2(second);

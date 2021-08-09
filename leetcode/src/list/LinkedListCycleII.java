@@ -1,6 +1,5 @@
 package list;
 
-
 import base.ListNode;
 
 /**
@@ -12,24 +11,22 @@ import base.ListNode;
  */
 public class LinkedListCycleII {
 
-	public static ListNode detectCycle(ListNode head) {
+	public ListNode detectCycle(ListNode head) {
 		ListNode ret = null;
-		ListNode fast = head;
-    	ListNode slow = head;
-    	while (fast != null && fast.next != null) {
-    		fast = fast.next.next;
-    		slow = slow.next;
+		ListNode fast = head, slow = head;
+		while (fast != null && fast.next != null) {
+			fast = fast.next.next;
+			slow = slow.next;
 			// has cycle
-    		if (fast == slow) {
-    			slow = head;
-    			while (slow != fast) {
-    				slow = slow.next;
-    				fast = fast.next;
-    			}
-    			ret = slow;
-    			break;
-    		}
-    	}
-    	return ret;
+			if (fast == slow) {
+				slow = head;
+				while (fast != slow) {
+					fast = fast.next;
+					slow = slow.next;
+				}
+				return slow;
+			}
+		}
+		return ret;
 	}
 }
