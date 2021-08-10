@@ -12,7 +12,9 @@
   * Remove Duplicates from Sorted List II   iterative
   * Partition List                          left/right
   * Reorder List                            fast/slow + iterative + merge
-  * 
+  * Rotate List                             Cycle + iterative
+  * Intersection of Two Linked Lists        iterative
+  * Copy List with Random Pointer           hashmap
 
 * tree
 

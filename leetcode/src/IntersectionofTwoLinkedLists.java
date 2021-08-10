@@ -1,5 +1,3 @@
-import ListNode;
-
 /**
  * Write a program to find the node at which the intersection of two singly
  * linked lists begins.
@@ -11,44 +9,34 @@ import ListNode;
 public class IntersectionofTwoLinkedLists {
 
 	public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+		if (headA == null || headB == null) {
+			return null;
+		}
 		int len1 = 0, len2 = 0;
 		ListNode p1 = headA, p2 = headB;
-		if (p1 == null || p2 == null)
-			return null;
-
 		while (p1 != null) {
-			len1++;
 			p1 = p1.next;
+			len1++;
 		}
 		while (p2 != null) {
-			len2++;
 			p2 = p2.next;
+			len2++;
 		}
-		int diff = 0;
 		p1 = headA;
 		p2 = headB;
 		if (len1 > len2) {
-			diff = len1 - len2;
-			int i = 0;
-			while (i < diff) {
+			for (int i = 0; i < len1 - len2; i++) {
 				p1 = p1.next;
-				i++;
 			}
 		} else {
-			diff = len2 - len1;
-			int i = 0;
-			while (i < diff) {
+			for (int i = 0; i < len2 - len1; i++) {
 				p2 = p2.next;
-				i++;
 			}
 		}
-		while (p1 != null && p2 != null) {
-			if (p1.val == p2.val) {
-				return p1;
-			}
+		while (p1 != p2) {
 			p1 = p1.next;
 			p2 = p2.next;
 		}
-		return null;
+		return p1;
 	}
 }
