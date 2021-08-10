@@ -1,6 +1,4 @@
-package list;
-
-import base.ListNode;
+import ListNode;
 
 /**
  * Write a function to delete a node (except the tail) in a singly linked list,

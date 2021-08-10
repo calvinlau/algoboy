@@ -1,7 +1,4 @@
-package list;
-
-
-import base.ListNode;
+import ListNode;
 
 /**
  * Reverse a singly linked list.

@@ -1,7 +1,4 @@
-package list;
-
-
-import base.ListNode;
+import ListNode;
 
 /**
  * You are given two linked lists representing two non-negative numbers. The

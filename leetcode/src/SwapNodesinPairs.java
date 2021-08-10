@@ -1,6 +1,4 @@
-package list;
-
-import base.ListNode;
+import ListNode;
 
 /**
  * Given a linked list, swap every two adjacent nodes and return its head.

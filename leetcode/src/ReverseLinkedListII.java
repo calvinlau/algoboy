@@ -1,7 +1,4 @@
-package list;
-
-
-import base.ListNode;
+import ListNode;
 
 /**
  * Reverse a linked list from position m to n. Do it in-place and in one-pass.

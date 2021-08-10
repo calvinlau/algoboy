@@ -1,22 +1,39 @@
-package list;
-
-import base.ListNode;
 
 import java.util.Stack;
 
 /**
  * Given a list, rotate the list to the right by k places, where k is
  * non-negative.
- * 
+ * <p>
  * For example: Given 1->2->3->4->5->NULL and k = 2, return 4->5->1->2->3->NULL.
- * 
+ *
  * @author calvinliu
  * @Solution: Link head and tail as ring, then set len - k 's node.next as null
- *  
  */
 public class RotateList {
 
-	public static ListNode rotateRight(ListNode head, int n) {
+    public ListNode rotateRight_1(ListNode head, int k) {
+        if (head == null || k == 0) {
+            return head;
+        }
+		int len = 1;
+        ListNode last = head;
+        while (last.next != null) {
+            last = last.next;
+            len++;
+        }
+        last.next = head;
+        int i = len - k % len;
+        while (i > 0) {
+            last = last.next;
+            i--;
+        }
+        ListNode ret = last.next;
+        last.next = null;
+        return ret;
+    }
+
+	public static ListNode rotateRight_2(ListNode head, int n) {
 		Stack<ListNode> stack = new Stack<ListNode>();
 		ListNode cur = head;
 		ListNode last = null;
@@ -46,29 +63,6 @@ public class RotateList {
 				break;
 			}
 		}
-		return head;
-	}
-	
-	public ListNode rotateRight_2(ListNode head, int k) {
-		if (head == null || k == 0) {
-			return head;
-		}
-		int len = 1;
-		ListNode last = head;
-		while (last.next != null) {
-			last = last.next;
-			len++;
-		}
-		last.next = head;
-		// Should considered the situtation that n larger than given list's length
-		int i = len - k % len;
-		ListNode preHead = last;
-		while (i > 0) {
-			preHead = preHead.next;
-			i--;
-		}
-		head = preHead.next;
-		preHead.next = null;
 		return head;
 	}
 }

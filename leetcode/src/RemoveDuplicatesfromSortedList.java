@@ -1,6 +1,4 @@
-package list;
-
-import base.ListNode;
+import ListNode;
 
 /**
  * Given a sorted linked list, delete all duplicates such that each element
@@ -21,7 +19,7 @@ public class RemoveDuplicatesfromSortedList {
     		return head;
     	}
     	ListNode cur = head;
-    	while (cur!= null && cur.next != null) {
+    	while (cur.next != null) {
     		if (cur.val == cur.next.val) {
     			cur.next = cur.next.next;
     		} else {

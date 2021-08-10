@@ -1,6 +1,4 @@
-package list;
-
-import base.ListNode;
+import ListNode;
 
 /**
  * Given a singly linked list, group all odd nodes together followed by the even

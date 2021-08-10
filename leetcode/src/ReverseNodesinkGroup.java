@@ -1,6 +1,4 @@
-package list;
-
-import base.ListNode;
+import ListNode;
 
 /**
  * Given a linked list, reverse the nodes of a linked list k at a time and

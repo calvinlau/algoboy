@@ -8,6 +8,10 @@
   * Reverse Linked List                     recursive
   * Linked List Cycle                       fast/slow
   * Linked List Cycle II                    fast/slow
+  * Remove Duplicates from Sorted List      iterative
+  * Remove Duplicates from Sorted List II   iterative
+  * Partition List                          left/right
+  * Reorder List                            fast/slow + iterative + merge
 
 * tree
 
