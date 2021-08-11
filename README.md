@@ -1,7 +1,11 @@
 * list
   * Method
     * fast/slow
+    * left/right
+    * iterative
     * recursive
+    * Cycle
+    * hashmap
   * Remove Linked List Elements             iterative
   * Delete Node in a Linked List
   * Merge Two Sorted Lists                  iterative
@@ -15,6 +19,7 @@
   * Rotate List                             Cycle + iterative
   * Intersection of Two Linked Lists        iterative
   * Copy List with Random Pointer           hashmap
+  * Odd Even Linked List                    left/right
 
 * tree
 
