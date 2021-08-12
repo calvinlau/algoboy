@@ -1,5 +1,3 @@
-import ListNode;
-
 /**
  * Reverse a singly linked list.
  * 
@@ -25,6 +23,16 @@ public class ReverseLinkedList {
 		head.next = null;
 		return pre;
     }
+
+	public ListNode reverse(ListNode head) {
+		if (head == null || head.next == null) {
+			return head;
+		}
+		ListNode last = reverse(head.next);
+		head.next.next = head;
+		head.next = null;
+		return last;
+	}
 
     public ListNode reverseList_2(ListNode head) {
 		if (head == null || head.next == null) {

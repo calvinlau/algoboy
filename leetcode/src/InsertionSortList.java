@@ -1,5 +1,3 @@
-import ListNode;
-
 /**
  * Sort a linked list using insertion sort.
  * 
