@@ -19,19 +19,14 @@
 public class InvertBinaryTree {
 
 	public TreeNode invertTree(TreeNode root) {
-		if (root != null) {
-			helper(root);
+		if (root == null) {
+			return null;
 		}
+		TreeNode temp = root.left;
+		root.left = root.right;
+		root.right = temp;
+		invertTree(root.left);
+		invertTree(root.right);
 		return root;
-	}
-
-	public void helper(TreeNode p) {
-		TreeNode temp = p.left;
-		p.left = p.right;
-		p.right = temp;
-		if (p.left != null)
-			helper(p.left);
-		if (p.right != null)
-			helper(p.right);
 	}
 }

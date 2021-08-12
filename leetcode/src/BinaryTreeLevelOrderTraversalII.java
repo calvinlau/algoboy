@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
@@ -19,6 +16,26 @@ import java.util.Queue;
  *   
  */
 public class BinaryTreeLevelOrderTraversalII {
+
+	private final List<List<Integer>> ret = new ArrayList<>();
+
+	public List<List<Integer>> levelOrderBottom(TreeNode root) {
+		preOrder(root, 0);
+		Collections.reverse(ret);
+		return ret;
+	}
+
+	private void preOrder(TreeNode root, int level) {
+		if (root == null) {
+			return;
+		}
+		if (ret.size() == level) {
+			ret.add(new ArrayList<>());
+		}
+		ret.get(level).add(root.val);
+		preOrder(root.left, level + 1);
+		preOrder(root.right, level + 1);
+	}
 
 	public static List<List<Integer>> levelOrder(TreeNode root) {
 		List<List<Integer>> result = new ArrayList<List<Integer>>();

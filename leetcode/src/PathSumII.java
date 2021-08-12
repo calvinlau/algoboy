@@ -26,23 +26,21 @@ import java.util.List;
 public class PathSumII {
 
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
-    	List<List<Integer>> ret = new ArrayList<List<Integer>>();
-    	List<Integer> path = new ArrayList<Integer>();
-    	pathSum(ret, path, root, sum);
-    	return ret;
-    }
+		List<List<Integer>> ret = new ArrayList<>();
+		pathSum(root, sum, new ArrayList<>(), ret);
+		return ret;
+	}
 
-	private void pathSum(List<List<Integer>> ret, List<Integer> path, TreeNode root, int sum) {
-		if (root == null) {
+	private void pathSum(TreeNode node, int sum, List<Integer> path, List<List<Integer>> ret) {
+		if (node == null) {
 			return;
 		}
-		path.add(root.val);
-		if (root.left == null && root.right == null && root.val == sum) {
-			List<Integer> tmp = new ArrayList<Integer>(path);
-			ret.add(tmp);
+		path.add(node.val);
+		if (node.left == null && node.right == null && node.val == sum) {
+			ret.add(new ArrayList<>(path));
 		}
-		pathSum(ret, path, root.left, sum - root.val);
-		pathSum(ret, path, root.right, sum - root.val);
+		pathSum(node.left, sum - node.val, path, ret);
+		pathSum(node.right, sum - node.val, path, ret);
 		path.remove(path.size() - 1);
 	}
 }

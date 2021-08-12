@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Given a binary tree, return the zigzag level order traversal of its nodes' values. 
@@ -21,7 +18,31 @@ import java.util.Queue;
  */
 public class BinaryTreeZigzagLevelOrderTraversal {
 
-	public static List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+	private final List<List<Integer>> ret = new ArrayList<>();
+
+	public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+		preOrder(root, 0);
+		for (int i = 0; i < ret.size(); i++) {
+			if (i % 2 != 0) {
+				Collections.reverse(ret.get(i));
+			}
+		}
+		return ret;
+	}
+
+	private void preOrder(TreeNode root, int level) {
+		if (root == null) {
+			return;
+		}
+		if (ret.size() == level) {
+			ret.add(new ArrayList<>());
+		}
+		ret.get(level).add(root.val);
+		preOrder(root.left, level + 1);
+		preOrder(root.right, level + 1);
+	}
+
+	public static List<List<Integer>> zigzagLevelOrder_2(TreeNode root) {
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		if (root == null) {
 			return result;

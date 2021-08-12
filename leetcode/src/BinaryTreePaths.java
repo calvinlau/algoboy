@@ -3,35 +3,28 @@ import java.util.List;
 
 /**
  * Given a binary tree, return all root-to-leaf paths.
- * 
+ *
  * @author calvinliu
  * @Solution: DFS
- * 
  */
 public class BinaryTreePaths {
 
-	public List<String> binaryTreePaths(TreeNode root) {
-		List<String> result = new ArrayList<String>();
-		if (root == null) {
-			return result;
-		}
-		helper(root, String.valueOf(root.val), result);
-		return result;
-	}
+    public List<String> binaryTreePaths(TreeNode root) {
+        List<String> ret = new ArrayList<>();
+        helper(ret, "", root);
+        return ret;
+    }
 
-	private void helper(TreeNode root, String path, List<String> result) {
-		if (root == null) {
-			return;
-		}
-		if (root.left == null && root.right == null) {
-			result.add(path);
-			return;
-		}
-		if (root.left != null) {
-			helper(root.left, path + "->" + String.valueOf(root.left.val), result);
-		}
-		if (root.right != null) {
-			helper(root.right, path + "->" + String.valueOf(root.right.val), result);
-		}
-	}
+    private void helper(List<String> ret, String path, TreeNode node) {
+        if (node == null) {
+            return;
+        }
+        path += node.val;
+        if (node.left == null && node.right == null) {
+            ret.add(path);
+        } else {
+            helper(ret, path + "->", node.left);
+            helper(ret, path + "->", node.right);
+        }
+    }
 }
