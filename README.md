@@ -13,7 +13,7 @@
 | Delete Node in a Linked List             | iterative                    |
 | Merge Two Sorted Lists                   | iterative                    |
 | Reverse Linked List                      | iterative/recursive          |
-| Reverse Linked List II                   | iterative          |
+| Reverse Linked List II                   | iterative                    |
 | Middle of the Linked List                | fast/slow                    |
 | Linked List Cycle                        | fast/slow                    |
 | Linked List Cycle II                     | fast/slow                    |
