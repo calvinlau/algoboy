@@ -34,7 +34,7 @@ public class CombinationSumII {
 			return;
 		}
 		for (int i = start; i < nums.length && nums[i] <= target; i++) {
-			if (i != start && nums[i] == nums[i - 1]) {
+			if (i > start && nums[i] == nums[i - 1]) {
 				continue;
 			}
 			path.add(nums[i]);

@@ -28,19 +28,19 @@ import java.util.List;
 
 public class Subsets {
 
-    public List<List<Integer>> subsets(int[] nums) {
-    	Arrays.sort(nums);
-    	List<List<Integer>> ret = new ArrayList<List<Integer>>();
-    	List<Integer> path = new ArrayList<Integer>();
-    	dfs(ret, path, nums, 0);
-    	return ret;
-    }
+	public List<List<Integer>> subsets(int[] nums) {
+		List<List<Integer>> ret = new ArrayList<>();
+		List<Integer> path = new ArrayList<>();
+		Arrays.sort(nums);
+		dfs(0, path, nums, ret);
+		return ret;
+	}
 
-	private void dfs(List<List<Integer>> ret, List<Integer> path, int[] nums, int start) {
-		ret.add(new ArrayList<Integer>(path));
+	private void dfs(int start, List<Integer> path, int[] nums, List<List<Integer>> ret) {
+		ret.add(new ArrayList<>(path));
 		for (int i = start; i < nums.length; i++) {
 			path.add(nums[i]);
-			dfs(ret, path, nums, i + 1);
+			dfs(i + 1, path, nums, ret);
 			path.remove(path.size() - 1);
 		}
 	}
