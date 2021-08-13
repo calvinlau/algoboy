@@ -66,6 +66,10 @@ Binary Tree Right Side View
 
 Permutations
 
+Two Sum
+Two Sum II - Input array is sorted
+3Sum
+3Sum Closest
 
 * heap/stack
 

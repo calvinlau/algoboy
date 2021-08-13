@@ -20,24 +20,15 @@ import java.util.Map;
 public class TwoSum {
 
 	public int[] twoSum(int[] nums, int target) {
-		if (nums == null || nums.length == 0) {
-			return null;
-		}
 		int[] ret = new int[2];
-		
-		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		Map<Integer, Integer> map = new HashMap<>();
 		for (int i = 0; i < nums.length; i++) {
-			Integer n = map.get(nums[i]);
-			if (n == null) {
-				map.put(nums[i], i);
+			if (map.containsKey(target - nums[i])) {
+				ret[0] = map.get(target - nums[i]);
+				ret[1] = i;
+				break;
 			}
-			Integer tmp = target - nums[i];
-			n = map.get(tmp);
-			if (n != null && n < i) {
-				ret[1] = i + 1;
-				ret[0] = map.get(tmp) + 1;
-				return ret;
-			}
+			map.put(nums[i], i);
 		}
 		return ret;
 	}

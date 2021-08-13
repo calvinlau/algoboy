@@ -15,12 +15,41 @@ import java.util.Arrays;
  */
 public class ThreeSumClosest {
 
-	public static void main(String[] args) {
-		int[] num = {-1, 2, 1,1, -4};
-		System.out.println(new ThreeSumClosest().threeSumClosest(num, 1));
+	public int threeSumClosest(int[] nums, int target) {
+		Arrays.sort(nums);
+		int ret = 0, minDiff = Integer.MAX_VALUE;
+		for (int i = 0; i < nums.length - 2; i++) {
+			if (i > 0 && nums[i] == nums[i - 1]) {
+				continue;
+			}
+			int l = i + 1, r = nums.length - 1;
+			while (l < r) {
+				int sum = nums[i] + nums[l] + nums[r];
+				if (Math.abs(target - sum) < minDiff) {
+					minDiff = Math.abs(target - sum);
+					ret = sum;
+				}
+				if (sum < target) {
+					l++;
+				} else if (sum > target) {
+					r--;
+				} else {
+					return sum;
+				}
+			}
+		}
+		return ret;
 	}
 
-    public int threeSumClosest(int[] nums, int target) {
+
+
+
+
+
+
+
+
+    public int threeSumClosest_1(int[] nums, int target) {
         int ret = 0;
     	if (nums == null || nums.length < 3) {
     		return ret;
