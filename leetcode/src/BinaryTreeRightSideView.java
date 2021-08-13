@@ -13,6 +13,24 @@ import java.util.List;
 public class BinaryTreeRightSideView {
 
 	public List<Integer> rightSideView(TreeNode root) {
+		List<Integer> ret = new ArrayList<>();
+		dfs(0, root, ret);
+		return ret;
+	}
+
+	private void dfs(int depth, TreeNode node, List<Integer> ret) {
+		if (node == null) {
+			return;
+		}
+		if (ret.size() == depth) {
+			ret.add(node.val);
+		}
+		dfs(depth + 1, node.right, ret);
+		dfs(depth + 1, node.left, ret);
+	}
+
+
+	public List<Integer> rightSideView_2(TreeNode root) {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		if (root == null)
 			return result;

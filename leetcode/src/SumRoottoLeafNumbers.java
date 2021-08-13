@@ -23,16 +23,14 @@ public class SumRoottoLeafNumbers {
 		return dfs(root, 0);
 	}
 
-	private int dfs(TreeNode root, int prev) {
-		if (root == null) {
+	private int dfs(TreeNode node, int sum) {
+		if (node == null) {
 			return 0;
 		}
-
-		int sum = root.val + prev * 10;
-		if (root.left == null && root.right == null) {
+		sum = sum * 10 + node.val;
+		if (node.left == null && node.right == null) {
 			return sum;
 		}
-
-		return dfs(root.left, sum) + dfs(root.right, sum);
+		return dfs(node.left, sum) + dfs(node.right, sum);
 	}
 }

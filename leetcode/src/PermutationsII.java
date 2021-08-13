@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Given a collection of numbers that might contain duplicates, return all
@@ -17,20 +14,45 @@ import java.util.Set;
  */
 public class PermutationsII {
 
-    public List<List<Integer>> permuteUnique(int[] nums) {
-    	Set<List<Integer>> ret = new HashSet<List<Integer>>();
-    	List<Integer> path = new ArrayList<Integer>();
-    	boolean[] flag = new boolean[nums.length];
-    	dfs(ret, path, nums, flag);
-    	return new ArrayList<List<Integer>>(ret);
-    }
+	public List<List<Integer>> permuteUnique(int[] nums) {
+		if (nums == null || nums.length == 0) {
+			return null;
+		}
+		Arrays.sort(nums);
+		List<List<Integer>> ret = new ArrayList<>();
+		dfs(new ArrayList<>(), nums, ret);
+		return ret;
+	}
+
+	private void dfs(List<Integer> path, int[] nums, List<List<Integer>> ret) {
+		if (path.size() == nums.length) {
+			ret.add(new ArrayList<>(path));
+			return;
+		}
+		for (int i = 0; i < nums.length; i++) {
+			if (!path.contains(nums[i])) {
+				if (i > 0 && nums[i] == nums[i - 1]) {
+					return;
+				}
+				path.add(nums[i]);
+				dfs(path, nums, ret);
+				path.remove(path.size() - 1);
+			}
+		}
+	}
+
+	public List<List<Integer>> permuteUnique_2(int[] nums) {
+		Set<List<Integer>> ret = new HashSet<>();
+		List<Integer> path = new ArrayList<>();
+		boolean[] flag = new boolean[nums.length];
+		dfs(ret, path, nums, flag);
+		return new ArrayList<>(ret);
+	}
 
 	private void dfs(Set<List<Integer>> ret, List<Integer> path, int[] num, boolean[] flag) {
 		if (path.size() == num.length) {
-			List<Integer> tmp = new ArrayList<Integer>(path);
-			if (!ret.contains(tmp)) {
-				ret.add(tmp);
-			}
+			List<Integer> tmp = new ArrayList<>(path);
+			ret.add(tmp);
 		}
 		for (int i = 0; i < num.length; i++) {
 			if (!flag[i]) {

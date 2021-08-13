@@ -24,6 +24,18 @@ import java.util.Stack;
  */
 public class BinaryTreeUpsideDown {
 
+	public TreeNode upsidedown(TreeNode root) {
+		return dfs(root, null);
+	}
+
+	private TreeNode dfs(TreeNode node, TreeNode parent) {
+		if (node == null) return parent;
+		TreeNode root = dfs(node.left, node);
+		node.left = parent == null ? parent : parent.right;
+		node.right = parent;
+		return root;
+	}
+
 	public TreeNode upsidedown_1(TreeNode root) {
 		Stack<TreeNode> stack = new Stack<TreeNode>();
 		TreeNode node = root;
@@ -43,18 +55,6 @@ public class BinaryTreeUpsideDown {
 			}
 		}
 		return ret;
-	}
-	
-	public TreeNode upsidedown_2(TreeNode root) {
-		return dfs(root, null);
-	}
-
-	private TreeNode dfs(TreeNode node, TreeNode parent) {
-		if (node == null) return parent;
-		TreeNode root = dfs(node.left, node);
-		node.left = parent == null ? parent : parent.right;
-		node.right = parent;
-		return root;
 	}
 }
 

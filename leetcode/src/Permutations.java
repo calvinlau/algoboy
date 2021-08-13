@@ -15,18 +15,17 @@ import java.util.List;
 public class Permutations {
 
 	public List<List<Integer>> permute(int[] nums) {
-		List<List<Integer>> ret = new ArrayList<List<Integer>>();
 		if (nums == null || nums.length == 0) {
-			return ret;
+			return null;
 		}
-		ArrayList<Integer> path = new ArrayList<Integer>();
-		dfs(ret, path, nums);
+		List<List<Integer>> ret = new ArrayList<>();
+		dfs(new ArrayList<>(), nums, ret);
 		return ret;
 	}
 
-	public void dfs(List<List<Integer>> ret, ArrayList<Integer> path, int[] nums) {
+	private void dfs(List<Integer> path, int[] nums, List<List<Integer>> ret) {
 		if (path.size() == nums.length) {
-			ret.add(new ArrayList<Integer>(path));
+			ret.add(new ArrayList<>(path));
 			return;
 		}
 		for (int i = 0; i < nums.length; i++) {
@@ -34,7 +33,7 @@ public class Permutations {
 				continue;
 			}
 			path.add(nums[i]);
-			dfs(ret, path, nums);
+			dfs(path, nums, ret);
 			path.remove(path.size() - 1);
 		}
 	}

@@ -11,18 +11,19 @@
  */
 public class ValidateBinarySearchTree {
 	public boolean isValidBST(TreeNode root) {
-		if (root == null)
-			return true;
-		return validate(root.left, Long.MIN_VALUE, (long) root.val) && validate(root.right, (long) root.val, Long.MAX_VALUE);
+		return isValidBST(root, null, null);
 	}
 
-	private boolean validate(TreeNode root, Long min, Long max) {
-		if (root == null)
+	private boolean isValidBST(TreeNode node, TreeNode left, TreeNode right) {
+		if (node == null) {
 			return true;
-		if (root.val > min && root.val < max) {
-			return validate(root.left, min, (long) root.val) && validate(root.right, (long) root.val, max);
-		} else {
+		}
+		if (left != null && node.val <= left.val) {
 			return false;
 		}
+		if (right != null && node.val >= right.val) {
+			return false;
+		}
+		return isValidBST(node.left, left, node) && isValidBST(node.right, node, right);
 	}
 }

@@ -27,6 +27,8 @@
 | Intersection of Two Linked Lists         | iterative + length           | O(N)/O(1)       |
 | Copy List with Random Pointer            | hashmap                      | O(N)/O(N)       |
 | Odd Even Linked List                     | iterative                    | O(N)/O(N)       |
+Swap Nodes in Pairs
+Add Two Numbers
 
 ### tree
 |  Class | Method | Complexity | 
@@ -34,6 +36,7 @@
 | Binary Tree Preorder Traversal           | recursive                    | O(N)/O(1)       |
 | Binary Tree Inorder Traversal            | recursive                    | O(N)/O(1)       |
 | Binary Tree Postorder Traversal          | recursive                    | O(N)/O(1)       |
+Validate Binary Search Tree
 | Same Tree                                | Preorder                     | O(N)/O(1)       |
 | Symmetric Tree                           | Preorder                     | O(N)/O(1)       |
 | Invert Binary Tree                       | Preorder + swap              | O(N)/O(1)       |
@@ -46,6 +49,10 @@
 | Binary Tree Paths                        | PostOrder                    | O(N)/O(1)       |
 | LCA of a Binary Search Tree              | PostOrder                    | O(N)/O(1)       |
 
+Lowest Common Ancestor of a Binary Tree
+Sum Root to Leaf Numbers
+Binary Tree Right Side View
+
 ### backtrack
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
@@ -56,6 +63,9 @@
 | Combination Sum III                      | backtrack                    | O(N!)/O(N!)     |
 | Subsets                                  | backtrack                    | O(N!)/O(N!)     |
 | Subsets II                               | backtrack                    | O(N!)/O(N!)     |
+
+Permutations
+
 
 * heap/stack
 

@@ -1,5 +1,3 @@
-import ListNode;
-
 /**
  * You are given two linked lists representing two non-negative numbers. The
  * digits are stored in reverse order and each of their nodes contain a single
@@ -13,26 +11,25 @@ import ListNode;
  */
 public class AddTwoNumbers {
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-    	ListNode ret = new ListNode(0);
-    	ListNode cur1 = l1, cur2 = l2, pre = ret;
-    	int carry = 0;
-    	while (cur1 != null || cur2 != null) {
-    		if (cur1 != null) {
-    			carry += cur1.val;
-    			cur1 = cur1.next;
-    		}
-    		if (cur2 != null) {
-    			carry += cur2.val;
-    			cur2 = cur2.next;
-    		}
-    		pre.next = new ListNode(carry % 10);
-    		pre = pre.next;
+	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+		ListNode ret = new ListNode(0), cur = ret;
+		int carry = 0;
+		while (l1 != null || l2 != null) {
+			if (l1 != null) {
+				carry += l1.val;
+				l1 = l1.next;
+			}
+			if (l2 != null) {
+				carry += l2.val;
+				l2 = l2.next;
+			}
+			cur.next = new ListNode(carry % 10);
+			cur = cur.next;
 			carry = carry / 10;
-    	}
-    	if (carry == 1) {
-    		pre.next = new ListNode(1);
-    	}
+		}
+		if (carry > 0) {
+			cur.next = new ListNode(carry);
+		}
 		return ret.next;
-    }
+	}
 }
