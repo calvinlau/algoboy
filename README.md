@@ -21,12 +21,12 @@
 | Reorder List                             | fast/slow + reverse + merge  | O(N)/O(1)       |
 | Remove Duplicates from Sorted List       | iterative                    | O(N)/O(1)       |
 | Remove Duplicates from Sorted List II    | iterative                    | O(N)/O(1)       |
-| Partition List                           | left/right                   |                 |
+| Partition List                           | left/right                   | O(N)/O(1)       |
 | Palindrome Linked List                   | reverse + compare            | O(N)/O(1)       |
-| Rotate List                              | Cycle + iterative            |                 |
-| Intersection of Two Linked Lists         | iterative                    |                 |
+| Rotate List                              | Cycle + iterative            | O(N)/O(1)       |
+| Intersection of Two Linked Lists         | iterative + length           | O(N)/O(1)       |
 | Copy List with Random Pointer            | hashmap                      | O(N)/O(N)       |
-| Odd Even Linked List                     | left/right                   |                 |
+| Odd Even Linked List                     | iterative                    | O(N)/O(N)       |
 
 ### tree
 |  Class | Method | Complexity | 
@@ -34,18 +34,17 @@
 | Binary Tree Preorder Traversal           | recursive                    | O(N)/O(1)       |
 | Binary Tree Inorder Traversal            | recursive                    | O(N)/O(1)       |
 | Binary Tree Postorder Traversal          | recursive                    | O(N)/O(1)       |
-| Same Tree                                | Preorder                     |                 |
-| Symmetric Tree                           | Preorder                     |                 |
-| Invert Binary Tree                       | Preorder                     |                 |
-| Binary Tree Level Order Traversal        | Preorder                     |                 |
-| BBinary Tree Level Order Traversal II    | Preorder                     |                 |
-| Binary Tree Zigzag Level Order Traversal | Preorder                     |                 |
-| Invert Binary Tree                       | Preorder                     |                 |
-| Balanced Binary Tree                     | PostOrder                    |                 |
-| LCA of a Binary Search Tree              | PostOrder                    |                 |
-| Maximum Depth of Binary Tree             | PostOrder                    |                 |
-| Minimum Depth of Binary Tree             | PostOrder                    |                 |
+| Same Tree                                | Preorder                     | O(N)/O(1)       |
+| Symmetric Tree                           | Preorder                     | O(N)/O(1)       |
+| Invert Binary Tree                       | Preorder + swap              | O(N)/O(1)       |
+| Binary Tree Level Order Traversal        | Preorder + level             | O(N!)/O(N!)     |
+| Binary Tree Level Order Traversal II     | Preorder + level + reverse   | O(N!)/O(N!)     |
+| Binary Tree Zigzag Level Order Traversal | Preorder + level + reverse   | O(N!)/O(N!)     |
+| Balanced Binary Tree                     | PostOrder + height gap       | O(N)/O(1)       |
+| Maximum Depth of Binary Tree             | PostOrder + height           | O(N)/O(1)       |
+| Minimum Depth of Binary Tree             | PostOrder + height           | O(N)/O(1)       |
 | Binary Tree Paths                        | PostOrder                    | O(N)/O(1)       |
+| LCA of a Binary Search Tree              | PostOrder                    | O(N)/O(1)       |
 
 ### backtrack
 |  Class | Method | Complexity | 
