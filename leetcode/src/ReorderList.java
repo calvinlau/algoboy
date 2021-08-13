@@ -9,7 +9,38 @@
  */
 public class ReorderList {
 
-	public void reorderList(ListNode head) {
+	public void reorderList1(ListNode head) {
+		if (head == null) {
+			return;
+		}
+		ListNode fast = head, slow = head, mid;
+		// find the middle
+		while (fast != null && fast.next != null) {
+			fast = fast.next.next;
+			slow = slow.next;
+		}
+		mid = slow.next;
+		slow.next = null;
+		// reverse rest
+		fast = null;
+		while (mid != null) {
+			ListNode next = mid.next;
+			mid.next = fast;
+			fast = mid;
+			mid = next;
+		}
+		// merge two list
+		while (fast != null && head != null) {
+			ListNode temp = head.next;
+			head.next = fast;
+			head = temp;
+			temp = fast.next;
+			fast.next = head;
+			fast = temp;
+		}
+	}
+
+	public void reorderList_2(ListNode head) {
 		if (head == null) {
 			return;
 		}
