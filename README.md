@@ -30,7 +30,6 @@
 | Swap Nodes in Pairs                      | iterative                    | O(N)/O(N)       |
 | Add Two Numbers                          | iterative + merge            | O(N)/O(N)       |
 
-
 ### tree
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
@@ -53,7 +52,6 @@
 | Lowest Common Ancestor of a Binary Tree  | PostOrder                    | O(N)/O(1)       |
 | Sum Root to Leaf Numbers                 | PostOrder                    | O(N)/O(1)       |
 
-
 ### backtrack
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
@@ -65,7 +63,6 @@
 | Subsets                                  | backtrack                    | O(N!)/O(N!)     |
 | Subsets II                               | backtrack                    | O(N!)/O(N!)     |
 | Permutations                             | backtrack                    | O(N!)/O(N!)     |
-
 
 ### array
 |  Class | Method | Complexity | 
@@ -85,7 +82,6 @@
 | Majority Element                         | left/right                   | O(N)/O(N)       |
 | Majority Element II                      | left/right                   | O(N)/O(N)       |
 
-
 ### heap/stack
 
 
@@ -95,9 +91,15 @@
 | Contains Duplicate                       | hashmap                      | O(N)/O(N)       |
 | Contains Duplicate II                    | left/right                   | O(N)/O(N)       |
 
-* sorting
+### search
+Binary Search
+Search Insert Position
+First Bad Version
+Search for a Range
+Search a 2D Matrix
+Find Minimum in Rotated Sorted Array
 
-* search
+### sorting
 
 * graph
 
