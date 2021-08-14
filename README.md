@@ -90,6 +90,7 @@
 |  ----  | ----   | ----       | 
 | Contains Duplicate                       | hashmap                      | O(N)/O(N)       |
 | Contains Duplicate II                    | left/right                   | O(N)/O(N)       |
+LRU Cache
 
 ### search
 Binary Search
@@ -101,8 +102,11 @@ Find Minimum in Rotated Sorted Array
 
 ### sorting
 
-* graph
+### graph
 
-* dc
+### dc
 
-* dp
+### dp
+
+https://codetop.cc/
+https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/backend.md
