@@ -12,14 +12,17 @@
  */
 public class RemoveDuplicatesfromSortedArrayII {
 
-    public int removeDuplicates(int[] nums) {
-    	if (nums.length <= 2) return nums.length;
-		int index = 2;
-		for (int i = index; i < nums.length; i++) {
-			if (nums[index - 2] != nums[i]) {
-				nums[index++] = nums[i];
+	public int removeDuplicates(int[] nums) {
+		if (nums.length <= 2) {
+			return nums.length;
+		}
+		int count = 2;
+		for (int i = count; i < nums.length; i++) {
+			if (nums[i] != nums[count - 2]) {
+				nums[count] = nums[i];
+				count++;
 			}
 		}
-		return index;
-    }
+		return count;
+	}
 }

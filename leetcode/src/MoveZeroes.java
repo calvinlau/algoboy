@@ -15,18 +15,14 @@
 public class MoveZeroes {
 
 	public void moveZeroes(int[] nums) {
-		int i = -1, j = 0;
-		while (j < nums.length) {
-			if (nums[j] != 0) {
-				swap(++i, j, nums);
+		int count = 0;
+		for (int i = 0; i < nums.length; i++) {
+			if (nums[i] != 0) {
+				int temp = nums[i];
+				nums[i] = nums[count];
+				nums[count] = temp;
+				count++;
 			}
-			j++;
 		}
-	}
-
-	public void swap(int i, int j, int[] nums) {
-		int temp = nums[i];
-		nums[i] = nums[j];
-		nums[j] = temp;
 	}
 }

@@ -13,25 +13,21 @@ public class RemoveDuplicatesfromSortedListII {
 
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null) {
-            return head;
+            return null;
         }
-        ListNode start = new ListNode(0);
-        start.next = head;
-        ListNode slow = start;
-        ListNode fast = head;
-        while (fast.next != null) {
-            if (slow.next.val != fast.next.val) {
-                if (slow.next.next == fast.next) {
-                    slow = slow.next;
-                } else {
-                    slow.next = fast.next;
-                }
+        ListNode dummy = new ListNode(0), slow = dummy, fast = head;
+        dummy.next = head;
+        while (fast != null) {
+            while (fast.next != null && fast.val == fast.next.val) {
+                fast = fast.next;
+            }
+            if (slow.next == fast) {
+                slow = slow.next;
+            } else {
+                slow.next = fast.next;
             }
             fast = fast.next;
         }
-        if (slow.next.next != fast.next) {
-            slow.next = fast.next;
-        }
-        return start.next;
+        return dummy.next;
     }
 }

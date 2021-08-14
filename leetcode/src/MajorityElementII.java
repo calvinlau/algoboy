@@ -12,7 +12,49 @@ import java.util.Map;
  */
 public class MajorityElementII {
 
+	public static void main(String[] args) {
+		System.out.println(majorityElement(new int[]{3, 3, 4}));
+	}
+
+	public static List<Integer> majorityElement(int[] nums) {
+		List<Integer> ret = new ArrayList<>();
+		int count1 = 0, major1 = 0, count2 = 0, major2 = 0;
+		for (int i = 0; i < nums.length; i++) {
+			if (major1 == nums[i]) {
+				count1++;
+			} else if (major2 == nums[i]) {
+				count2++;
+			} else if (count1 == 0) {
+				major1 = nums[i];
+				count1++;
+			} else if (count2 == 0) {
+				major2 = nums[i];
+				count2++;
+			} else {
+				count1--;
+				count2--;
+			}
+		}
+		count1 = 0;
+		count2 = 0;
+		for (int i = 0; i < nums.length; i++) {
+			if (major1 == nums[i]) {
+				count1++;
+			} else if (major2 == nums[i]) {
+				count2++;
+			}
+		}
+		if (count1 > nums.length / 3) {
+			ret.add(major1);
+		}
+		if (count2 > nums.length / 3) {
+			ret.add(major2);
+		}
+		return ret;
+	}
+
     public List<Integer> majorityElement_1(int[] nums) {
+
     	List<Integer> ret = new ArrayList<Integer>();
     	if (nums == null || nums.length == 0) {
     		return ret;
@@ -30,40 +72,4 @@ public class MajorityElementII {
 		}
     	return ret;
     }
-
-	public List<Integer> majorityElement_2(int[] nums) {
-		List<Integer> result = new ArrayList<Integer>();
-		Integer n1 = null, n2 = null;
-		int c1 = 0, c2 = 0;
-		for (int i : nums) {
-			if (n1 != null && i == n1.intValue()) {
-				c1++;
-			} else if (n2 != null && i == n2.intValue()) {
-				c2++;
-			} else if (c1 == 0) {
-				c1 = 1;
-				n1 = i;
-			} else if (c2 == 0) {
-				c2 = 1;
-				n2 = i;
-			} else {
-				c1--;
-				c2--;
-			}
-		}
-
-		c1 = c2 = 0;
-		for (int i : nums) {
-			if (i == n1.intValue()) {
-				c1++;
-			} else if (i == n2.intValue()) {
-				c2++;
-			}
-		}
-		if (c1 > nums.length / 3)
-			result.add(n1);
-		if (c2 > nums.length / 3)
-			result.add(n2);
-		return result;
-	}
 }

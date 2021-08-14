@@ -1,4 +1,5 @@
-import java.util.HashSet;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Given an array of integers, find if the array contains any duplicates. Your
@@ -6,19 +7,18 @@ import java.util.HashSet;
  * and it should return false if every element is distinct.
  * 
  * @author calvinliu
- * @Solution: HashSet for storing
+ * @Solution: HashMap for storing
  * 
  */
 public class ContainsDuplicate {
 
 	public boolean containsDuplicate(int[] nums) {
-		if (nums == null || nums.length == 0)
-			return false;
-
-		HashSet<Integer> set = new HashSet<Integer>();
-		for (int i : nums) {
-			if (!set.add(i)) {
+		Map<Integer, Integer> map = new HashMap<>();
+		for (int i = 0; i < nums.length; i++) {
+			if (map.containsKey(nums[i])) {
 				return true;
+			} else {
+				map.put(nums[i], i);
 			}
 		}
 		return false;

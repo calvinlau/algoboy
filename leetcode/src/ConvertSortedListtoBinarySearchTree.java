@@ -1,5 +1,3 @@
-import ListNode;
-import TreeNode;
 
 /**
  * Given a singly linked list where elements are sorted in ascending order,

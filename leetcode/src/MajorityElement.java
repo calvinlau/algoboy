@@ -11,7 +11,22 @@ import java.util.Map;
  */
 public class MajorityElement {
 
-    public int majorityElement(int[] nums) {
+	public int majorityElement(int[] nums) {
+		int count = 0, major = 0;
+		for (int i = 0; i < nums.length; i++) {
+			if (count == 0) {
+				major = nums[i];
+				count++;
+			} else if (major == nums[i]) {
+				count++;
+			} else {
+				count--;
+			}
+		}
+		return major;
+	}
+
+    public int majorityElement_2(int[] nums) {
     	int ret = 0;
     	if (nums == null || nums.length == 0) {
     		return ret;
