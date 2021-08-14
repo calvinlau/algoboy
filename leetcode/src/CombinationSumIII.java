@@ -25,12 +25,12 @@ public class CombinationSumIII {
 		return ret;
 	}
 
-	private void dfs(int start, List<Integer> path, int sum, int k, List<List<Integer>> ret) {
+	private void dfs(int depth, List<Integer> path, int sum, int k, List<List<Integer>> ret) {
 		if (k == path.size() && sum == 0) {
 			ret.add(new ArrayList<>(path));
 			return;
 		}
-		for (int i = start; i < 10 && i <= sum; i++) {
+		for (int i = depth; i < 10 && i <= sum; i++) {
 			path.add(i);
 			dfs(i + 1, path, sum - i, k, ret);
 			path.remove(path.size() - 1);

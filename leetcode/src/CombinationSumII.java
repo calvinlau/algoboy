@@ -28,13 +28,13 @@ public class CombinationSumII {
 		return ret;
 	}
 
-	private void dfs(int start, List<Integer> path, int target, int[] nums, List<List<Integer>> ret) {
+	private void dfs(int depth, List<Integer> path, int target, int[] nums, List<List<Integer>> ret) {
 		if (target == 0) {
 			ret.add(new ArrayList<>(path));
 			return;
 		}
-		for (int i = start; i < nums.length && nums[i] <= target; i++) {
-			if (i > start && nums[i] == nums[i - 1]) {
+		for (int i = depth; i < nums.length && nums[i] <= target; i++) {
+			if (i > depth && nums[i] == nums[i - 1]) {
 				continue;
 			}
 			path.add(nums[i]);

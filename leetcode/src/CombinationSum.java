@@ -24,22 +24,22 @@ import java.util.List;
  */
 public class CombinationSum {
 	
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+    public List<List<Integer>> combinationSum(int[] nums, int target) {
 		List<List<Integer>> ret = new ArrayList<>();
 		List<Integer> path = new ArrayList<>();
-		Arrays.sort(candidates);
-		dfs(0, path, target, candidates, ret);
+		Arrays.sort(nums);
+		dfs(0, path, target, nums, ret);
 		return ret;
 	}
 
-	private void dfs(int start, List<Integer> path, int target, int[] candidates, List<List<Integer>> ret) {
+	private void dfs(int depth, List<Integer> path, int target, int[] nums, List<List<Integer>> ret) {
 		if (target == 0) {
 			ret.add(new ArrayList<>(path));
 			return;
 		}
-		for (int i = start; i < candidates.length && candidates[i] <= target; i++) {
-			path.add(candidates[i]);
-			dfs(i, path, target - candidates[i], candidates, ret);
+		for (int i = depth; i < nums.length && nums[i] <= target; i++) {
+			path.add(nums[i]);
+			dfs(i, path, target - nums[i], nums, ret);
 			path.remove(path.size() - 1);
 		}
 	}

@@ -81,24 +81,29 @@
 | Pascal's Triangle II                     | left/right                   | O(N)/O(N)       |
 | Majority Element                         | left/right                   | O(N)/O(N)       |
 | Majority Element II                      | left/right                   | O(N)/O(N)       |
+| Rotate Image                             | 2D + swap                    | O(N^2)/O(1)     |
 
 ### heap/stack
-
+|  Class | Method | Complexity | 
+|  ----  | ----   | ----       | 
+| Valid Parentheses                        | stack                        | O(N)/O(N)       |
 
 ### map
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
 | Contains Duplicate                       | hashmap                      | O(N)/O(N)       |
 | Contains Duplicate II                    | left/right                   | O(N)/O(N)       |
-LRU Cache
+| LRU Cache                                | hashmap                      | O(N)/O(N)       |
 
 ### search
-Binary Search
-Search Insert Position
-First Bad Version
-Search for a Range
-Search a 2D Matrix
-Find Minimum in Rotated Sorted Array
+|  Class | Method | Complexity | 
+|  ----  | ----   | ----       | 
+| Binary Search                            | hashmap                      | O(N)/O(N)       |
+| Search Insert Position                   | hashmap                      | O(N)/O(N)       |
+| First Bad Version                        | hashmap                      | O(N)/O(N)       |
+| Search for a Range                       | hashmap                      | O(N)/O(N)       |
+| Search a 2D Matrix                       | hashmap                      | O(N)/O(N)       |
+| Find Minimum in Rotated Sorted Array     | hashmap                      | O(N)/O(N)       |
 
 ### sorting
 
