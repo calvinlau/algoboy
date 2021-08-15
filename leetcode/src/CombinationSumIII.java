@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class CombinationSumIII {
 
-	public List<List<Integer>> combinationSum3(int k, int n) {
+	public List<List<Integer>> combinationSum(int k, int n) {
 		List<List<Integer>> ret = new ArrayList<>();
 		List<Integer> path = new ArrayList<>();
 		dfs(1, path, n, k, ret);

@@ -15,9 +15,9 @@ public class PalindromeLinkedList {
 		}
 		ListNode oldHead = head, newHead = new ListNode(head.val);
 		while (oldHead.next != null) {
-			ListNode temp  = new ListNode(oldHead.next.val);
-			temp.next = newHead;
-			newHead = temp;
+			ListNode next = new ListNode(oldHead.next.val);
+			next.next = newHead;
+			newHead = next;
 			oldHead = oldHead.next;
 		}
 		oldHead = head;

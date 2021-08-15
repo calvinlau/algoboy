@@ -36,10 +36,10 @@ public class SubsetsII {
 		return ret;
 	}
 
-	private void dfs(int start, List<Integer> path, int[] nums, List<List<Integer>> ret) {
+	private void dfs(int depth, List<Integer> path, int[] nums, List<List<Integer>> ret) {
 		ret.add(new ArrayList<>(path));
-		for (int i = start; i < nums.length; i++) {
-			if (i > start && nums[i] == nums[i - 1]) {
+		for (int i = depth; i < nums.length; i++) {
+			if (i > depth && nums[i] == nums[i - 1]) {
 				continue;
 			}
 			path.add(nums[i]);

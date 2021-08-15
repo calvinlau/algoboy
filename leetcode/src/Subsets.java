@@ -36,9 +36,9 @@ public class Subsets {
 		return ret;
 	}
 
-	private void dfs(int start, List<Integer> path, int[] nums, List<List<Integer>> ret) {
+	private void dfs(int depth, List<Integer> path, int[] nums, List<List<Integer>> ret) {
 		ret.add(new ArrayList<>(path));
-		for (int i = start; i < nums.length; i++) {
+		for (int i = depth; i < nums.length; i++) {
 			path.add(nums[i]);
 			dfs(i + 1, path, nums, ret);
 			path.remove(path.size() - 1);
