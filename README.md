@@ -82,11 +82,13 @@
 | Majority Element                         | left/right                   | O(N)/O(N)       |
 | Majority Element II                      | left/right                   | O(N)/O(N)       |
 | Rotate Image                             | 2D + swap                    | O(N^2)/O(1)     |
+Spiral Matrix
 
 ### heap/stack
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
 | Valid Parentheses                        | stack                        | O(N)/O(N)       |
+Min Stack
 
 ### map
 |  Class | Method | Complexity | 
@@ -104,6 +106,8 @@
 | Search for a Range                       | hashmap                      | O(N)/O(N)       |
 | Search a 2D Matrix                       | hashmap                      | O(N)/O(N)       |
 | Find Minimum in Rotated Sorted Array     | hashmap                      | O(N)/O(N)       |
+Find Peak Element
+Sqrt(x)
 
 ### sorting
 
@@ -112,6 +116,9 @@
 ### dc
 
 ### dp
+Maximum Subarray
+Best Time to Buy and Sell Stock
+Best Time to Buy and Sell Stock II
 
 https://codetop.cc/
 https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/backend.md

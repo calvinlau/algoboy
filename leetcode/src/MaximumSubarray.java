@@ -10,12 +10,11 @@
  * 
  */
 public class MaximumSubarray {
-	public int maxSubArray(int[] A) {
-		if (A == null || A.length == 0) return 0;
-		int ret = A[0], sum = A[0];
-		for (int i = 1; i < A.length; i++) {
-			sum = Math.max(A[i], sum + A[i]);
-			ret = Math.max(sum, ret);
+	public int maxSubArray(int[] nums) {
+		int maxSub = nums[0], ret = nums[0];
+		for (int i = 1; i < nums.length; i++) {
+			maxSub = Math.max(maxSub + nums[i], nums[i]);
+			ret = Math.max(maxSub, ret);
 		}
 		return ret;
 	}
