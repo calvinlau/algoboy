@@ -1,4 +1,4 @@
-### list
+### List
 #### Method
  * fast/slow
  * left/right
