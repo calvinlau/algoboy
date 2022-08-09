@@ -3,7 +3,7 @@
  * For example,
  *   Given {1,2,3,4}, reorder it to {1,4,2,3}.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution Break list in the middle, Reverse the order of the second list, Merge two list
  * 
  */
@@ -30,7 +30,7 @@ public class ReorderList {
 			mid = next;
 		}
 		// merge two list
-		while (fast != null && head != null) {
+		while (head != null && fast != null) {
 			ListNode temp = head.next;
 			head.next = fast;
 			head = temp;

@@ -1,35 +1,36 @@
 ### List
 #### Method
- * fast/slow
- * left/right
- * iterative
- * recursive
- * cycle
- * hashmap
+ * Fast/Slow
+ * Dummy Head
+ * Left/Right
+ * Iterative
+ * Recursive
+ * Cycle
+ * Hashmap
 
 |  Class | Method | Complexity |
 |  ----  | ----   | ----       |
-| Remove Linked List Elements              | iterative                    | O(1)/O(1)       1|
-| Delete Node in a Linked List             | iterative                    | O(N)/O(1)       1|
-| Merge Two Sorted Lists                   | iterative                    | O(N)/O(1)       1|
-| Merge k Sorted Lists                     | recursive + iterative        | O(N)/O(1)       1|
-| Reverse Linked List                      | iterative/recursive          | O(N)/O(1)       1|
-| Reverse Linked List II                   | iterative + m + n            | O(N)/O(1)       1|
-| Middle of the Linked List                | fast/slow                    | O(N)/O(1)       1|
-| Linked List Cycle                        | fast/slow                    | O(N)/O(1)       1|
-| Linked List Cycle II                     | fast/slow                    | O(N)/O(1)       1|
-| Remove Nth Node From End of List         | fast/slow                    | O(N)/O(1)       |
-| Reorder List                             | fast/slow + reverse + merge  | O(N)/O(1)       |
-| Remove Duplicates from Sorted List       | iterative                    | O(N)/O(1)       |
-| Remove Duplicates from Sorted List II    | iterative + dummy            | O(N)/O(1)       |
-| Partition List                           | left/right                   | O(N)/O(1)       |
-| Palindrome Linked List                   | reverse + compare            | O(N)/O(1)       |
+| Remove Linked List Elements              | Iterative                    | O(1)/O(1)       1|
+| Delete Node in a Linked List             | Iterative                    | O(N)/O(1)       1|
+| Merge Two Sorted Lists                   | Iterative                    | O(N)/O(1)       1|
+| Merge k Sorted Lists                     | Recursive + Iterative        | O(N)/O(1)       1|
+| Reverse Linked List                      | Iterative/Recursive          | O(N)/O(1)       1|
+| Reverse Linked List II                   | Iterative + m + n            | O(N)/O(1)       1|
+| Middle of the Linked List                | Fast/Slow                    | O(N)/O(1)       1|
+| Linked List Cycle                        | Fast/Slow                    | O(N)/O(1)       1|
+| Linked List Cycle II                     | Fast/Slow                    | O(N)/O(1)       1|
+| Remove Nth Node From End of List         | Fast/Slow                    | O(N)/O(1)       1|
+| Reorder List                             | Fast/Slow + Reverse + Merge  | O(N)/O(1)       1|
+| Remove Duplicates from Sorted List       | Iterative                    | O(N)/O(1)       1|
+| Remove Duplicates from Sorted List II    | Iterative + Dummy            | O(N)/O(1)       1|
+| Partition List                           | Left/Right + Dummy           | O(N)/O(1)       1|
+| Palindrome Linked List                   | Reverse + Compare            | O(N)/O(1)       1|
 | Rotate List                              | Cycle + iterative            | O(N)/O(1)       |
-| Intersection of Two Linked Lists         | iterative + length           | O(N)/O(1)       |
-| Copy List with Random Pointer            | hashmap                      | O(N)/O(N)       |
-| Odd Even Linked List                     | iterative                    | O(N)/O(N)       |
-| Swap Nodes in Pairs                      | iterative                    | O(N)/O(N)       |
-| Add Two Numbers                          | iterative + merge            | O(N)/O(N)       |
+| Intersection of Two Linked Lists         | Iterative + length           | O(N)/O(1)       |
+| Copy List with Random Pointer            | Hashmap                      | O(N)/O(N)       |
+| Odd Even Linked List                     | Iterative                    | O(N)/O(N)       |
+| Swap Nodes in Pairs                      | Iterative                    | O(N)/O(N)       |
+| Add Two Numbers                          | Iterative + Merge            | O(N)/O(N)       |
 
 ### tree
 |  Class | Method | Complexity | 

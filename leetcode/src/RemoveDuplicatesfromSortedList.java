@@ -6,7 +6,7 @@
  * Given 1->1->2, return 1->2. 
  * Given 1->1->2->3->3, return 1->2->3.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution: Scan node list, if (cur.val == cur.next.val) cur.next = cur.next.next;
  * 
  */
