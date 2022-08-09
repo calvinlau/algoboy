@@ -1,7 +1,7 @@
 /**
  * Reverse a singly linked list.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution 1: iteratively
  * @Solution 2: recursively
  * 

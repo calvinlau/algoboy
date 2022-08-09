@@ -9,15 +9,15 @@
 
 |  Class | Method | Complexity |
 |  ----  | ----   | ----       |
-| Remove Linked List Elements              | iterative                    | O(1)/O(1)       |
-| Delete Node in a Linked List             | iterative                    | O(N)/O(1)       |
-| Merge Two Sorted Lists                   | iterative                    | O(N)/O(1)       |
-| Merge k Sorted Lists                     | recursive + iterative        | O(N)/O(1)       |
-| Reverse Linked List                      | iterative/recursive          | O(N)/O(1)       |
-| Reverse Linked List II                   | iterative + m + n            | O(N)/O(1)       |
-| Middle of the Linked List                | fast/slow                    | O(N)/O(1)       |
-| Linked List Cycle                        | fast/slow                    | O(N)/O(1)       |
-| Linked List Cycle II                     | fast/slow                    | O(N)/O(1)       |
+| Remove Linked List Elements              | iterative                    | O(1)/O(1)       1|
+| Delete Node in a Linked List             | iterative                    | O(N)/O(1)       1|
+| Merge Two Sorted Lists                   | iterative                    | O(N)/O(1)       1|
+| Merge k Sorted Lists                     | recursive + iterative        | O(N)/O(1)       1|
+| Reverse Linked List                      | iterative/recursive          | O(N)/O(1)       1|
+| Reverse Linked List II                   | iterative + m + n            | O(N)/O(1)       1|
+| Middle of the Linked List                | fast/slow                    | O(N)/O(1)       1|
+| Linked List Cycle                        | fast/slow                    | O(N)/O(1)       1|
+| Linked List Cycle II                     | fast/slow                    | O(N)/O(1)       1|
 | Remove Nth Node From End of List         | fast/slow                    | O(N)/O(1)       |
 | Reorder List                             | fast/slow + reverse + merge  | O(N)/O(1)       |
 | Remove Duplicates from Sorted List       | iterative                    | O(N)/O(1)       |

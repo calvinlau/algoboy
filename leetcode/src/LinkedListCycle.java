@@ -2,7 +2,7 @@
 /**
  * Given a linked list, determine if it has a cycle in it.
  *
- * @author calvinliu
+ * @author kevinliu
  * @Solution two pointers, fast/slow
  *
  */

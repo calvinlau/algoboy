@@ -2,7 +2,7 @@
  * Merge k sorted linked lists and return it as one sorted list. Analyze and
  * describe its complexity.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution: Transfer Merge k to merge 2
  * 
  */

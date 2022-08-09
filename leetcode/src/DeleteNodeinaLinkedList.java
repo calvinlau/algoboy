@@ -6,7 +6,7 @@
  * with value 3, the linked list should become 1 -> 2 -> 4 after calling your
  * function.
  * 
- * @author calvinliu
+ * @author kevinliu
  * 
  */
 public class DeleteNodeinaLinkedList {

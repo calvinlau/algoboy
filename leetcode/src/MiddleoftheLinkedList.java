@@ -3,7 +3,7 @@
  * <p>
  * If there are two middle nodes, return the second middle node.
  *
- * @author calvinliu
+ * @author kevinliu
  */
 public class MiddleoftheLinkedList {
 
@@ -15,5 +15,4 @@ public class MiddleoftheLinkedList {
         }
         return slow;
     }
-
 }
