@@ -2,7 +2,7 @@
  * Write a program to find the node at which the intersection of two singly
  * linked lists begins.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution Start from the longer list at the diff offset, iterate though 2 lists and find the node.
  * 
  */

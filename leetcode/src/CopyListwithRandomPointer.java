@@ -6,7 +6,7 @@ import java.util.Map;
  * pointer which could point to any node in the list or null. Return a deep copy
  * of the list.
  *
- * @author calvinliu
+ * @author kevinliu
  * @solution HashMap
  */
 public class CopyListwithRandomPointer {
@@ -40,5 +40,39 @@ public class CopyListwithRandomPointer {
             node = node.next;
         }
         return map.get(head);
+    }
+
+    public RandomListNode copyRandomList(RandomListNode head) {
+        if (head == null)
+            return head;
+        RandomListNode cur = head;
+        // copy to next
+        while (cur != null) {
+            RandomListNode newNode = new RandomListNode(cur.label);
+            newNode.next = cur.next;
+            cur.next = newNode;
+            cur = newNode.next;
+        }
+        // copy random pointer
+        cur = head;
+        while (cur != null) {
+            if (cur.random != null) {
+                cur.next.random = cur.random.next;
+            }
+            cur = cur.next.next;
+        }
+        // split two node
+        cur = head.next;
+        RandomListNode newHead = cur;
+        RandomListNode old = head;
+        while (old != null) {
+            old.next = old.next.next;
+            if (old.next != null) {
+                cur.next = old.next.next;
+            }
+            cur = cur.next;
+            old = old.next;
+        }
+        return newHead;
     }
 }

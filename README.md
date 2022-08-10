@@ -22,17 +22,17 @@
 | Remove Nth Node From End of List         | Fast/Slow                    | O(N)/O(1)       1|
 | Reorder List                             | Fast/Slow + Reverse + Merge  | O(N)/O(1)       1|
 | Remove Duplicates from Sorted List       | Iterative                    | O(N)/O(1)       1|
-| Remove Duplicates from Sorted List II    | Iterative + Dummy            | O(N)/O(1)       1|
+| Remove Duplicates from Sorted List II    | Dummy                        | O(N)/O(1)       1|
 | Partition List                           | Left/Right + Dummy           | O(N)/O(1)       1|
 | Palindrome Linked List                   | Reverse + Compare            | O(N)/O(1)       1|
-| Rotate List                              | Cycle + iterative            | O(N)/O(1)       |
-| Intersection of Two Linked Lists         | Iterative + length           | O(N)/O(1)       |
-| Copy List with Random Pointer            | Hashmap                      | O(N)/O(N)       |
-| Odd Even Linked List                     | Iterative                    | O(N)/O(N)       |
-| Swap Nodes in Pairs                      | Iterative                    | O(N)/O(N)       |
-| Add Two Numbers                          | Iterative + Merge            | O(N)/O(N)       |
+| Rotate List                              | Cycle + iterative            | O(N)/O(1)       1|
+| Intersection of Two Linked Lists         | Iterative + length           | O(N)/O(1)       1|
+| Copy List with Random Pointer            | Hashmap                      | O(N)/O(N)       1|
+| Odd Even Linked List                     | Iterative                    | O(N)/O(N)       1|
+| Swap Nodes in Pairs                      | Dummy                        | O(N)/O(N)       1|
+| Add Two Numbers                          | Iterative + Merge            | O(N)/O(N)       1|
 
-### tree
+### Tree
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
 | Binary Tree Preorder Traversal           | recursive                    | O(N)/O(1)       |

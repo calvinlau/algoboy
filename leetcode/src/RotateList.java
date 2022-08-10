@@ -1,4 +1,3 @@
-
 import java.util.Stack;
 
 /**
@@ -7,7 +6,7 @@ import java.util.Stack;
  * <p>
  * For example: Given 1->2->3->4->5->NULL and k = 2, return 4->5->1->2->3->NULL.
  *
- * @author calvinliu
+ * @author kevinliu
  * @Solution: Link head and tail as ring, then set len - k 's node.next as null
  */
 public class RotateList {

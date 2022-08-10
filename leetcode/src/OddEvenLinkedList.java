@@ -8,7 +8,7 @@
  * <p>
  * Example: Given 1->2->3->4->5->NULL, return 1->3->5->2->4->NULL.
  *
- * @author calvinliu
+ * @author kevinliu
  * @Solution: Get 2 lists, even/odd, finally set odd.next = evenHead
  */
 public class OddEvenLinkedList {
