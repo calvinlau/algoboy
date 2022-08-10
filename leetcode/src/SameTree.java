@@ -6,7 +6,7 @@
  * <p>
  * Subscribe to see which companies asked this question
  *
- * @author calvinliu
+ * @author kevinliu
  * @Solution Divide and conquer
  */
 public class SameTree {

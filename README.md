@@ -35,24 +35,24 @@
 ### Tree
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
-| Binary Tree Preorder Traversal           | recursive                    | O(N)/O(1)       |
-| Binary Tree Inorder Traversal            | recursive                    | O(N)/O(1)       |
-| Binary Tree Postorder Traversal          | recursive                    | O(N)/O(1)       |
-| Same Tree                                | Preorder                     | O(N)/O(1)       |
-| Symmetric Tree                           | Preorder                     | O(N)/O(1)       |
-| Validate Binary Search Tree              | Preorder                     | O(N)/O(1)       |
-| Binary Tree Right Side View              | Preorder + swap              | O(N)/O(1)       |
-| Binary Tree Level Order Traversal        | Preorder + level             | O(N!)/O(N!)     |
-| Binary Tree Level Order Traversal        | Preorder + level             | O(N!)/O(N!)     |
-| Binary Tree Level Order Traversal II     | Preorder + level + reverse   | O(N!)/O(N!)     |
-| Binary Tree Zigzag Level Order Traversal | Preorder + level + reverse   | O(N!)/O(N!)     |
-| Balanced Binary Tree                     | PostOrder + height gap       | O(N)/O(1)       |
-| Maximum Depth of Binary Tree             | PostOrder + height           | O(N)/O(1)       |
-| Minimum Depth of Binary Tree             | PostOrder + height           | O(N)/O(1)       |
-| Binary Tree Paths                        | PostOrder                    | O(N)/O(1)       |
-| Sum Root to Leaf Numbers                 | PostOrder                    | O(N)/O(1)       |
-| LCA of a Binary Search Tree              | PostOrder                    | O(N)/O(1)       |
-| Lowest Common Ancestor of a Binary Tree  | PostOrder                    | O(N)/O(1)       |
+| Binary Tree Preorder Traversal           | Recursive                    | O(N)/O(1)       1|
+| Binary Tree Inorder Traversal            | Recursive                    | O(N)/O(1)       1|
+| Binary Tree Postorder Traversal          | Recursive                    | O(N)/O(1)       1|
+| Convert BST to Greater Tree              | Inorder                      | O(N)/O(1)       1|
+| Same Tree                                | Preorder                     | O(N)/O(1)       1|
+| Symmetric Tree                           | Preorder                     | O(N)/O(1)       1|
+| Validate Binary Search Tree              | Preorder                     | O(N)/O(1)       1|
+| Binary Tree Right Side View              | Preorder                     | O(N)/O(1)       1|
+| Binary Tree Level Order Traversal        | Preorder                     | O(N!)/O(N!)     1|
+| Binary Tree Level Order Traversal II     | Preorder + Reverse           | O(N!)/O(N!)     1|
+| Binary Tree Zigzag Level Order Traversal | Preorder + Reverse           | O(N!)/O(N!)     1|
+| Balanced Binary Tree                     | PostOrder                    | O(N)/O(1)       1|
+| Maximum Depth of Binary Tree             | PostOrder                    | O(N)/O(1)       1|
+| Minimum Depth of Binary Tree             | PostOrder                    | O(N)/O(1)       1|
+| Binary Tree Paths                        | PostOrder                    | O(N)/O(1)       1|
+| Sum Root to Leaf Numbers                 | PreOrder                     | O(N)/O(1)       1|
+| LCA of a Binary Search Tree              | Divide and conquer           | O(N)/O(1)       1|
+| Lowest Common Ancestor of a Binary Tree  | PostOrder                    | O(N)/O(1)       1|
 
 ### backtrack
 |  Class | Method | Complexity | 

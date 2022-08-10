@@ -6,7 +6,7 @@
  *  / \ / \
  * 3  4 4  3
  *
- * @author calvinliu
+ * @author kevinliu
  * @Solution Divide and conquer
  *
  */

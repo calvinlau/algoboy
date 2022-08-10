@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Given a binary tree, return all root-to-leaf paths.
  *
- * @author calvinliu
+ * @author kevinliu
  * @Solution: DFS
  */
 public class BinaryTreePaths {

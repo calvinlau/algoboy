@@ -11,7 +11,7 @@ import java.util.Queue;
  * Return:
  * [ [3], [9,20], [15,7] ]
  *
- * @author calvinliu
+ * @author kevinliu
  * @Solution 1. BFS - Queue
  * @Solution 2. DFS Recursively
  */
@@ -37,14 +37,14 @@ public class BinaryTreeLevelOrderTraversal {
     }
 
     public List<List<Integer>> levelOrder2(TreeNode root) {
-        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        List<List<Integer>> result = new ArrayList<>();
         if (root == null) {
             return result;
         }
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         while (!queue.isEmpty()) {
-            List<Integer> level = new ArrayList<Integer>();
+            List<Integer> level = new ArrayList<>();
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 TreeNode head = queue.poll();

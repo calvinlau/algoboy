@@ -5,7 +5,7 @@
  * in which the depth of the two subtrees of every node never differ by more
  * than 1.
  *
- * @author calvinliu
+ * @author kevinliu
  * @Solution Divide and conquer, get height firstly then compare left and right diff
  */
 public class BalancedBinaryTree {

@@ -6,7 +6,7 @@ import java.util.List;
  * Given a binary tree, imagine yourself standing on the right side of it,
  * return the values of the nodes you can see ordered from top to bottom.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution 1. BFS - Queue
  * 
  */
@@ -28,7 +28,6 @@ public class BinaryTreeRightSideView {
 		dfs(depth + 1, node.right, ret);
 		dfs(depth + 1, node.left, ret);
 	}
-
 
 	public List<Integer> rightSideView_2(TreeNode root) {
 		ArrayList<Integer> result = new ArrayList<Integer>();
