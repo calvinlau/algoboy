@@ -57,14 +57,15 @@
 ### backtrack
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
-| Path Sum                                 | backtrack no leaf && val=sum | O(N!)/O(N!)     |
-| Path Sum II                              | backtrack no leaf && val=sum | O(N!)/O(N!)     |
-| Combination Sum                          | backtrack depth              | O(N!)/O(N!)     |
-| Combination Sum II                       | backtrack unique             | O(N!)/O(N!)     |
-| Combination Sum III                      | backtrack                    | O(N!)/O(N!)     |
-| Subsets                                  | backtrack                    | O(N!)/O(N!)     |
-| Subsets II                               | backtrack unique             | O(N!)/O(N!)     |
-| Permutations                             | backtrack                    | O(N!)/O(N!)     |
+| Subsets                                  | backtrack                    | O(N!)/O(N!)     1|
+| Subsets II                               | backtrack unique             | O(N!)/O(N!)     1|
+| Path Sum                                 | backtrack no leaf && val=sum | O(N!)/O(N!)     1|
+| Path Sum II                              | backtrack no leaf && val=sum | O(N!)/O(N!)     1|
+| Combination Sum                          | backtrack depth              | O(N!)/O(N!)     1|
+| Combination Sum II                       | backtrack unique             | O(N!)/O(N!)     1|
+| Combination Sum III                      | backtrack                    | O(N!)/O(N!)     1|
+| Permutations                             | backtrack                    | O(N!)/O(N!)     1|
+| Permutations II                          | backtrack unique             | O(N!)/O(N!)     1|
 
 ### array
 |  Class | Method | Complexity | 

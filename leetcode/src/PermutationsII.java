@@ -8,8 +8,8 @@ import java.util.*;
  * [1,1,2] have the following unique permutations:
  * [1,1,2], [1,2,1], and [2,1,1].
  *
- * @author calvinliu
- * @solution dfs
+ * @author kevinliu
+ * @Solution DFS
  * 
  */
 public class PermutationsII {

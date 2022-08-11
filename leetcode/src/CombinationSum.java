@@ -18,7 +18,7 @@ import java.util.List;
  * [7] 
  * [2, 2, 3]
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution DFS
  * 
  */

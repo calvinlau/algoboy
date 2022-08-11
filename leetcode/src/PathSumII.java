@@ -18,10 +18,10 @@ import java.util.List;
  *    [5,4,11,2],
  *    [5,8,4,5]
  * ]
- * 
- * @author CalvinLiu
- * @Solution Divide and conquer
- * 
+ *
+ * @author kevinliu
+ * @Solution DFS
+ *
  */
 public class PathSumII {
 

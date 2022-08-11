@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Given a set of distinct integers, S, return all possible subsets.
  *
@@ -18,13 +22,10 @@
  *   []
  * ]
  *
- * @author calvinliu
+ * @author kevinliu
  * @Solution DFS
  *
  */
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Subsets {
 

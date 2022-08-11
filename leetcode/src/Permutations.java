@@ -8,8 +8,8 @@ import java.util.List;
  * [1,2,3] have the following permutations: 
  * [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1].
  * 
- * @author calvinliu
- * @solution dfs
+ * @author kevinliu
+ * @solution DFS
  * 
  */
 public class Permutations {
