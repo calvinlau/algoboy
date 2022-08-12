@@ -1,6 +1,10 @@
 /**
- * Follow up for "Search in Rotated Sorted Array": What if duplicates are
- * allowed?
+ * 81. Search in Rotated Sorted Array II
+ *
+ * Input: nums = [2,5,6,0,0,1,2], target = 0
+ * Output: true
+ *
+ * Follow up for "Search in Rotated Sorted Array": What if duplicates are allowed?
  * 
  * Would this affect the run-time complexity? How and why?
  * 

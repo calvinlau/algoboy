@@ -110,16 +110,24 @@
 | LRU Cache                                | linked hashmap               | O(N)/O(N)       |
 
 ### search
+#### Method
+* mid = left + (right - left) / 2
+
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
-| Binary Search                            | mid = (left+right/2)         | O(N)/O(N)       |
-| Search Insert Position                   | left                         | O(N)/O(N)       |
-| First Bad Version                        | left                         | O(N)/O(N)       |
-| Search for a Range                       | range=left+right             | O(N)/O(N)       |
-| Search a 2D Matrix                       | mid / width, mid % width     | O(N)/O(N)       |
-| Find Minimum in Rotated Sorted Array     | left                         | O(N)/O(N)       |
-| Find Peak Element                        | left                         | O(N)/O(N)       |
-| Sqrt(x)                                  | right                        | O(N)/O(N)       |
+| 704. Binary Search                           | mid                          | O(N)/O(N)       1|
+|  35. Search Insert Position                  | mid                          | O(N)/O(N)       1|
+| 278. First Bad Version                       | mid                          | O(N)/O(N)       1|
+| 153. Find Minimum in Rotated Sorted Array    | mid                          | O(N)/O(N)       1|
+| 154. Find Minimum in Rotated Sorted Array II | mid                          | O(N)/O(N)       1|
+| Search for a Range                           | range=left+right             | O(N)/O(N)       |
+| Search a 2D Matrix                           | mid / width, mid % width     | O(N)/O(N)       |
+| Find Peak Element                            | left                         | O(N)/O(N)       |
+| Sqrt(x)                                      | right                        | O(N)/O(N)       |
+| 33. Search in Rotated Sorted Array           | right                        | O(N)/O(N)       |
+| 81. Search in Rotated Sorted Array II        | right                        | O(N)/O(N)       |
+
+
 
 ### dp
 |  Class | Method | Complexity | 

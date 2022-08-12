@@ -1,4 +1,6 @@
 /**
+ * 278. First Bad Version
+ *
  * You are a product manager and currently leading a team to develop a new
  * product. Unfortunately, the latest version of your product fails the quality
  * check. Since each version is developed based on the previous version, all the
@@ -11,7 +13,7 @@
  * version is bad. Implement a function to find the first bad version. You
  * should minimize the number of calls to the API.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @solution binary search
  * 
  */

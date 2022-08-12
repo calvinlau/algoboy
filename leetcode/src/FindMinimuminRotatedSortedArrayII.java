@@ -1,4 +1,6 @@
 /**
+ * 154. Find Minimum in Rotated Sorted Array II
+ *
  * Follow up for "Find Minimum in Rotated Sorted Array": What if duplicates are
  * allowed?
  * 
@@ -11,7 +13,7 @@
  * 
  * The array may contain duplicates.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @solution binary search
  * 
  */
@@ -24,7 +26,7 @@ public class FindMinimuminRotatedSortedArrayII {
 		int left = 0;
 		int right = nums.length - 1;
 		while (left < right && nums[left] >= nums[right]) {
-			int mid = (left + right) / 2;
+			int mid = left + (right - left) / 2;
 			if (nums[mid] > nums[right]) {
 				left = mid + 1;
 			} else if (nums[mid] < nums[right]) {
