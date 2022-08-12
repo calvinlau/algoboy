@@ -6,7 +6,7 @@ import java.util.Map;
  * distinct indices i and j in the array such that nums[i] = nums[j] and the
  * difference between i and j is at most k.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution: HashMap for storing
  * 
  */

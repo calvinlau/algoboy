@@ -19,7 +19,7 @@ import java.util.Set;
  * (-1, 0, 1) 
  * (-1, -1, 2)
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution: 1. Simplify '3sum' to '2sum', using map to store data O(n^2) 
  *            2. Simplify '3sum' to '2sum', sort array firstly, then using two pointer left+right to search. 
  */

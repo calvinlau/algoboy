@@ -1,11 +1,12 @@
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Design and implement a TwoSum class. It should support the following
  * operations: add and find.
  * 
- * add - Add the number to an internal data structure. find - Find if there
- * exists any pair of numbers which sum is equal to the value.
+ * add - Add the number to an internal data structure.
+ * find - Find if there exists any pair of numbers which sum is equal to the value.
  * 
  * For example,
  * 
@@ -15,13 +16,13 @@ import java.util.HashMap;
  * find(4) -> true 
  * find(7) -> false
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution HashMap as internal storing
  * 
  */
 public class TwoSumIII {
 
-	private HashMap<Integer, Integer> elements = new HashMap<Integer, Integer>();
+	private Map<Integer, Integer> elements = new HashMap<>();
 	 
 	public void add(int number) {
 		if (elements.containsKey(number)) {
@@ -35,6 +36,7 @@ public class TwoSumIII {
 		for (Integer i : elements.keySet()) {
 			int target = value - i;
 			if (elements.containsKey(target)) {
+				// if only one element
 				if (i == target && elements.get(target) < 2) {
 					continue;
 				}

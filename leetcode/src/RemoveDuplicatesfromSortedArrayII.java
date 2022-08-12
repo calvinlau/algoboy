@@ -6,7 +6,7 @@
  * 
  * Your function should return length = 5, and A is now [1,1,2,2,3].
  * 
- * @author calvinliu
+ * @author kevinliu
  * @solution two pointer
  * 
  */

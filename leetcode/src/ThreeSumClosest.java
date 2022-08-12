@@ -9,15 +9,19 @@ import java.util.Arrays;
  * 
  * The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution: 1. Simplify '3sum' to '2sum', sort array firstly, then using two pointer left+right to search. 
  * 
  */
 public class ThreeSumClosest {
 
 	public int threeSumClosest(int[] nums, int target) {
+		int ret = 0;
+		if (nums == null || nums.length < 3) {
+			return ret;
+		}
+		int minDiff = Integer.MAX_VALUE;
 		Arrays.sort(nums);
-		int ret = 0, minDiff = Integer.MAX_VALUE;
 		for (int i = 0; i < nums.length - 2; i++) {
 			if (i > 0 && nums[i] == nums[i - 1]) {
 				continue;
@@ -40,39 +44,4 @@ public class ThreeSumClosest {
 		}
 		return ret;
 	}
-
-
-
-
-
-
-
-
-
-    public int threeSumClosest_1(int[] nums, int target) {
-        int ret = 0;
-    	if (nums == null || nums.length < 3) {
-    		return ret;
-    	}
-        int mindiff = Integer.MAX_VALUE;
-        Arrays.sort(nums);
-    	for (int i = 0; i < nums.length - 2; i++) {
-			int l = i + 1, r = nums.length - 1;
-    		while (l < r) {
-    			int sum = nums[i] + nums[l] + nums[r];
-    			if (Math.abs(target - sum) < mindiff) {
-    				mindiff = Math.abs(target - sum);
-    				ret = sum;
-    			}
-    			if (sum < target) {
-    				l++;
-    			} else if (sum > target){
-    				r--;
-    			} else {
-    				return sum;
-    			}
-    		}
-		}
-    	return ret;
-    }
 }

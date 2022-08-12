@@ -68,24 +68,33 @@
 | Permutations II                          | backtrack unique             | O(N!)/O(N!)     1|
 
 ### array
+#### Method
+* Left/right
+* Two pointer
+* Hashmap
+* ArrayList
+* Count Index
+
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
-| Two Sum                                  | hashmap                      | O(N)/O(N)       |
-| Two Sum II - Input array is sorted       | left/right                   | O(N)/O(N)       |
-| 3Sum                                     | left/right                   | O(N)/O(N)       |
-| 3Sum Closest                             | left/right                   | O(N)/O(N)       |
-| 4Sum                                     | left/right                   | O(N)/O(N)       |
-| Container With Most Water                | left/right                   | O(N)/O(N)       |
-| Move Zeroes                              | left/right                   | O(N)/O(N)       |
-| Remove Element                           | left/right                   | O(N)/O(N)       |
-| Remove Duplicates from Sorted Array      | left/right                   | O(N)/O(N)       |
-| Remove Duplicates from Sorted Array II   | left/right                   | O(N)/O(N)       |
-| Pascal's Triangle                        | two layer for                | O(N)/O(N)       |
-| Pascal's Triangle II                     | two layer for                | O(N)/O(N)       |
-| Majority Element                         | left/right                   | O(N)/O(N)       |
-| Majority Element II                      | left/right                   | O(N)/O(N)       |
+| Two Sum                                  | hashmap                      | O(N)/O(N)       1|
+| Two Sum II - Input array is sorted       | left/right                   | O(N)/O(N)       1|
+| Two Sum III - data structure design      | hashmap                      | O(N)/O(N)       1|
+| 3Sum                                     | left/right                   | O(NlogN)/O(N)   1|
+| 3Sum Closest                             | left/right                   | O(NlogN)/O(N)   1|
+| 3Sum Smaller                             | left/right                   | O(NlogN)/O(N)   1|
+| 4Sum                                     | left/right                   | O(NlogN)/O(N)   1|
+| Move Zeroes                              | two pointer                  | O(N)/O(N)       1|
+| Remove Element                           | two pointer                  | O(N)/O(N)       1|
+| Remove Duplicates from Sorted Array      | two pointer                  | O(N)/O(N)       1|
+| Remove Duplicates from Sorted Array II   | two pointer                  | O(N)/O(N)       1|
+| Pascal's Triangle                        | two arrayList                | O(N)/O(N)       1|
+| Pascal's Triangle II                     | two arrayList                | O(N)/O(N)       1|
+| Majority Element                         | Count Index                  | O(N)/O(N)       1|
+| Majority Element II                      | Count Index                  | O(N)/O(N)       1|
 | Rotate Image                             | 2D + swap                    | O(N^2)/O(1)     |
 | Spiral Matrix                            | 2D --m, --n                  | O(N^2)/O(1)     |
+| Container With Most Water                | left/right                   | O(N)/O(N)       |
 
 ### heap/stack
 |  Class | Method | Complexity | 
@@ -96,8 +105,8 @@
 ### map
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
-| Contains Duplicate                       | hashmap                      | O(N)/O(N)       |
-| Contains Duplicate II                    | hashmap + gap k              | O(N)/O(N)       |
+| Contains Duplicate                       | hashmap                      | O(N)/O(N)       1|
+| Contains Duplicate II                    | hashmap + gap k              | O(N)/O(N)       1|
 | LRU Cache                                | linked hashmap               | O(N)/O(N)       |
 
 ### search

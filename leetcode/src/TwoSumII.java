@@ -1,7 +1,7 @@
 /**
  * Input array is sorted
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution Two pointers from start to end
  * 
  */

@@ -7,7 +7,7 @@ import java.util.Map;
  * Given an integer array of size n, find all elements that appear more than ⌊
  * n/3 ⌋ times. The algorithm should run in linear time and in O(1) space.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @solution counter for 2 majority
  */
 public class MajorityElementII {
@@ -19,16 +19,16 @@ public class MajorityElementII {
 	public static List<Integer> majorityElement(int[] nums) {
 		List<Integer> ret = new ArrayList<>();
 		int count1 = 0, major1 = 0, count2 = 0, major2 = 0;
-		for (int i = 0; i < nums.length; i++) {
-			if (major1 == nums[i]) {
+		for (int num : nums) {
+			if (major1 == num) {
 				count1++;
-			} else if (major2 == nums[i]) {
+			} else if (major2 == num) {
 				count2++;
 			} else if (count1 == 0) {
-				major1 = nums[i];
+				major1 = num;
 				count1++;
 			} else if (count2 == 0) {
-				major2 = nums[i];
+				major2 = num;
 				count2++;
 			} else {
 				count1--;
@@ -37,10 +37,10 @@ public class MajorityElementII {
 		}
 		count1 = 0;
 		count2 = 0;
-		for (int i = 0; i < nums.length; i++) {
-			if (major1 == nums[i]) {
+		for (int num : nums) {
+			if (major1 == num) {
 				count1++;
-			} else if (major2 == nums[i]) {
+			} else if (major2 == num) {
 				count2++;
 			}
 		}
@@ -54,12 +54,11 @@ public class MajorityElementII {
 	}
 
     public List<Integer> majorityElement_1(int[] nums) {
-
-    	List<Integer> ret = new ArrayList<Integer>();
+    	List<Integer> ret = new ArrayList<>();
     	if (nums == null || nums.length == 0) {
     		return ret;
     	}
-    	Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+    	Map<Integer, Integer> map = new HashMap<>();
     	for (int i = 0; i < nums.length; i++) {
     		if (!map.keySet().contains(nums[i])) {
     			map.put(nums[i], 1);

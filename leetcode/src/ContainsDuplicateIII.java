@@ -5,7 +5,7 @@ import java.util.TreeSet;
  * and j in the array such that the difference between nums[i] and nums[j] is at
  * most t and the difference between i and j is at most k.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution: The floor(x) returns the greatest value that is less than x. The ceiling(x) returns the least value that is greater than x.
  * 
  */
@@ -14,7 +14,7 @@ public class ContainsDuplicateIII {
 	public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
 		if (k < 1 || t < 0)
 			return false;
-		TreeSet<Integer> set = new TreeSet<Integer>();
+		TreeSet<Integer> set = new TreeSet<>();
 
 		for (int i = 0; i < nums.length; i++) {
 			int c = nums[i];
