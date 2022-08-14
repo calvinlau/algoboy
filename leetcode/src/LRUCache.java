@@ -10,7 +10,7 @@ import java.util.Map;
  * set(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity,
  * it should invalidate the least recently used item before inserting a new item.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @solution LinkedHashMap
  * 
  */

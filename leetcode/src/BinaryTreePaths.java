@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 257. Binary Tree Paths
+ *
  * Given a binary tree, return all root-to-leaf paths.
  *
  * @author kevinliu

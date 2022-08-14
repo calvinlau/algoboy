@@ -1,4 +1,6 @@
 /**
+ * 226. Invert Binary Tree
+ *
  * Invert a binary tree.
  *      4
  *    /   \
@@ -12,7 +14,7 @@
  *  / \   / \
  * 9   6 3   1
  * 
- * @author calvinliu
+ * @author kevin
  * @Solution Recursion
  * 
  */
