@@ -70,7 +70,7 @@
 | 90. Subsets II                                      | DFS unique                   | O(N!)/O(N!)     1|
 | 112. Path Sum                                       | DFS no leaf && val=sum       | O(N!)/O(N!)     1|
 | 113. Path Sum II                                    | DFS no leaf && val=sum       | O(N!)/O(N!)     1|
-| 77. backtrack.Combinations                                    | DFS depth                    | O(N!)/O(N!)     1|
+| 77. Combinations                                    | DFS depth                    | O(N!)/O(N!)     1|
 | 39. Combination Sum                                 | DFS depth                    | O(N!)/O(N!)     1|
 | 40. Combination Sum II                              | DFS unique                   | O(N!)/O(N!)     1|
 | 216. Combination Sum III                            | DFS                          | O(N!)/O(N!)     1|

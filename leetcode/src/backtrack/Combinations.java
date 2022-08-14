@@ -1,8 +1,10 @@
+package backtrack;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 77. Combinations
+ * 77. backtrack.Combinations
  *
  * Given two integers n and k, return all possible combinations of k numbers out
  * of 1 ... n.
