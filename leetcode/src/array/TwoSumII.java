@@ -1,3 +1,5 @@
+package array;
+
 /**
  * Input array is sorted
  * 

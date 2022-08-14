@@ -1,8 +1,10 @@
+package array;
+
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Design and implement a TwoSum class. It should support the following
+ * Design and implement a array.TwoSum class. It should support the following
  * operations: add and find.
  * 
  * add - Add the number to an internal data structure.
