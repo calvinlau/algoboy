@@ -1,3 +1,5 @@
+package tree;
+
 /**
  * Given a binary tree, determine if it is height-balanced.
  * <p>
