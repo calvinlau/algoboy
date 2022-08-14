@@ -42,15 +42,17 @@
 | 144. Binary Tree Preorder Traversal                 | DFS                          | O(N)/O(1)       1|
 | 94. Binary Tree Inorder Traversal                   | DFS                          | O(N)/O(1)       1|
 | 145. Binary Tree Postorder Traversal                | DFS                          | O(N)/O(1)       1|
-| 538. Convert BST to Greater Tree                    | Inorder                      | O(N)/O(1)       1|
 | 100. Same Tree                                      | Preorder                     | O(N)/O(1)       1|
 | 101. Symmetric Tree                                 | Preorder                     | O(N)/O(1)       1|
 | 226. Invert Binary Tree                             | Preorder                     | O(N)/O(1)       1|
 | 98. Validate Binary Search Tree                     | Preorder                     | O(N)/O(1)       1|
 | 199. Binary Tree Right Side View                    | Preorder                     | O(N)/O(1)       1|
+| 404. Sum of Left Leaves                             | Preorder                     | O(N)/O(1)       1|
 | 102. Binary Tree Level Order Traversal              | Preorder                     | O(N!)/O(N!)     1|
 | 107. Binary Tree Level Order Traversal II           | Preorder + Reverse           | O(N!)/O(N!)     1|
 | 103. Binary Tree Zigzag Level Order Traversal       | Preorder + Reverse           | O(N!)/O(N!)     1|
+| 530. Minimum Absolute Difference in BST             | Inorder                      | O(N)/O(1)       1|
+| 538. Convert BST to Greater Tree                    | Inorder                      | O(N)/O(1)       1|
 | 110. Balanced Binary Tree                           | PostOrder                    | O(N)/O(1)       1|
 | 104. Maximum Depth of Binary Tree                   | PostOrder                    | O(N)/O(1)       1|
 | 111. Minimum Depth of Binary Tree                   | PostOrder                    | O(N)/O(1)       1|
