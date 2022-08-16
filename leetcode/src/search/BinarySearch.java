@@ -1,3 +1,5 @@
+package search;
+
 /**
  * 704. Binary Search
  *

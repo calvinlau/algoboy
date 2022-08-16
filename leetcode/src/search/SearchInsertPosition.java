@@ -1,3 +1,5 @@
+package search;
+
 /**
  * 35. Search Insert Position
  *

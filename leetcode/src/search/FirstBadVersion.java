@@ -1,3 +1,5 @@
+package search;
+
 /**
  * 278. First Bad Version
  *
