@@ -1,8 +1,10 @@
+package tree;
+
 /**
  * Given an array where elements are sorted in ascending order, convert it to a
  * height balanced BST.
  * 
- * @author calvinliu
+ * @author kevinliu
  * @Solution Find middle, convert left and right recursively
  * 
  */

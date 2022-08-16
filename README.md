@@ -52,14 +52,17 @@
 | 107. Binary Tree Level Order Traversal II           | Preorder + Reverse           | O(N!)/O(N!)     1|
 | 103. Binary Tree Zigzag Level Order Traversal       | Preorder + Reverse           | O(N!)/O(N!)     1|
 | 530. Minimum Absolute Difference in BST             | Inorder                      | O(N)/O(1)       1|
+| 108. Convert Sorted Array to Binary Search Tree     | Preorder                     | O(N)/O(1)       1|
 | 538. Convert BST to Greater Tree                    | Inorder                      | O(N)/O(1)       1|
 | 110. Balanced Binary Tree                           | PostOrder                    | O(N)/O(1)       1|
-| 104. Maximum Depth of Binary Tree                   | PostOrder                    | O(N)/O(1)       1|
 | 111. Minimum Depth of Binary Tree                   | PostOrder                    | O(N)/O(1)       1|
+| 104. Maximum Depth of Binary Tree                   | PostOrder                    | O(N)/O(1)       1|
+| 559. Maximum Depth of N-ary Tree                    | PostOrder                    | O(N)/O(1)       1|
 | 257. Binary Tree Paths                              | PostOrder                    | O(N)/O(1)       1|
 | 129. Sum Root to Leaf Numbers                       | PreOrder                     | O(N)/O(1)       1|
 | 235. Lowest Common Ancestor of a Binary Search Tree | PostOrder                    | O(N)/O(1)       1|
 | 236. Lowest Common Ancestor of a Binary Tree        | PostOrder                    | O(N)/O(1)       1|
+| 543. Diameter of Binary Tree                        | PostOrder                    | O(N)/O(1)       1|
 
 ### backtrack
 * DFS
@@ -94,6 +97,7 @@
 | 16. 3Sum Closest                                    | left/right                   | O(NlogN)/O(N)   1|
 | 259. 3Sum Smaller                                   | left/right                   | O(NlogN)/O(N)   1|
 | 18. 4Sum                                            | left/right                   | O(NlogN)/O(N)   1|
+| 88. Merge Sorted Array                              | two pointer                  | O(N)/O(1)       1|
 | 283. Move Zeroes                                    | two pointer                  | O(N)/O(N)       1|
 | 27. Remove Element                                  | two pointer                  | O(N)/O(N)       1|
 | 26. Remove Duplicates from Sorted Array             | two pointer                  | O(N)/O(N)       1|
@@ -105,6 +109,8 @@
 | Rotate Image                                        | 2D + swap                    | O(N^2)/O(1)     |
 | Spiral Matrix                                       | 2D --m, --n                  | O(N^2)/O(1)     |
 | Container With Most Water                           | left/right                   | O(N)/O(N)       |
+| 66. Plus One                                        | math                         | O(N)/O(1)       1|
+| 412. Fizz Buzz                                      | math                         | O(N)/O(1)       1|
 
 ### heap/stack
 |  Class | Method | Complexity | 
@@ -113,11 +119,38 @@
 | 155. Min Stack                                      | two stack                    | O(N)/O(N)       1|
 
 ### map
+#### Method
+* Hashmap
+
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
-| 217. Contains Duplicate                             | hashmap                      | O(N)/O(N)       1|
-| 219. Contains Duplicate II                          | hashmap + gap k              | O(N)/O(N)       1|
+| 217. Contains Duplicate                             | Hashmap                      | O(N)/O(N)       1|
+| 219. Contains Duplicate II                          | Hashmap + gap k              | O(N)/O(N)       1|
 | 146. LRU Cache                                      | LinkedHashMap                | O(N)/O(N)       1|
+| 202. Happy Number                                   | Hashmap                      | O(N)/O(N)       1|
+| 242. Valid Anagram                                  | Hashmap                      | O(N)/O(1)       1|
+| 268. Missing Number                                 | Hashmap                      | O(N)/O(1)       1|
+| 3. Longest Substring Without Repeating Characters   | Hashmap                      | O(N)/O(N)       1|
+| 387. First Unique Character in a String             | Hashmap                      | O(N)/O(N)       1|
+| 349. Intersection of Two Arrays                     | Hashmap                      | O(L1+L2)/O(min(L1+L2))       1|
+| 350. Intersection of Two Arrays II                  | Hashmap                      | O(L1+L2)/O(min(L1+L2))       1|
+
+### string
+#### Method
+Recursive
+* Left/right
+* char - 'A'
+
+|  Class | Method | Complexity | 
+|  ----  | ----   | ----       | 
+| 13. Roman to Integer                                | Recursive                    | O(N)/O(N)       1|
+| 14. Longest Common Prefix                           | Recursive                    | O(N)/O(N)       1|
+| 28. Implement strStr                                | Recursive                    | O(N)/O(N)       1|
+| 125. Valid Palindrome                               | Left/right                   | O(N)/O(N)       1|
+| 680. Valid Palindrome II                            | Left/right                   | O(N)/O(N)       1|
+| 151. Reverse Words in a String                      | Left/right                   | O(N)/O(N)       1|
+| 344. Reverse String                                 | Left/right                   | O(N)/O(N)       1|
+| 171. Excel Sheet Column Number                      | char - 'A'                   | O(N)/O(1)       1|
 
 ### search
 #### Method
@@ -133,22 +166,41 @@
 | Search for a Range                                  | range=left+right             | O(N)/O(N)       |
 | Search a 2D Matrix                                  | mid / width, mid % width     | O(N)/O(N)       |
 | Find Peak Element                                   | left                         | O(N)/O(N)       |
-| Sqrt(x)                                             | right                        | O(N)/O(N)       |
-| 33. Search in Rotated Sorted Array                  | right                        | O(N)/O(N)       |
-| 81. Search in Rotated Sorted Array II               | right                        | O(N)/O(N)       |
+| 69.Sqrt(x)                                          | right                        | O(N)/O(N)       1|
+| 33. Search in Rotated Sorted Array                  | right                        | O(N)/O(N)       1|
+| 81. Search in Rotated Sorted Array II               | right                        | O(N)/O(N)       1|
+
+### math
+|  Class | Method | Complexity | 
+|  ----  | ----   | ----       | 
+| 326. Power of Three                                 | Iterative                    | O(N)/O(N)       |
+
+### Bit Manipulation
+|  Class | Method | Complexity | 
+|  ----  | ----   | ----       | 
+| 136. Single Number                                  | Iterative                    | O(N)/O(1)       |
+| 190. Reverse Bits                                   | Iterative                    | O(N)/O(1)       |
+| 191. Number of 1 Bits                               | Iterative                    | O(N)/O(1)       |
 
 ### dp
 |  Class | Method | Complexity | 
 |  ----  | ----   | ----       | 
 | Maximum Subarray                         | max sum                      | O(N)/O(N)       |
-| Best Time to Buy and Sell Stock          | find min, calc gap           | O(N)/O(N)       |
-| Best Time to Buy and Sell Stock II       | find all gap                 | O(N)/O(N)       |
+| 70. Climbing Stairs                                 | f[n] = f[n-1] + f[n-2]        | O(N)/O(1)       1|
+| 121. Best Time to Buy and Sell Stock                | store min, calc max profit    | O(N)/O(1)       1|
+| 122. Best Time to Buy and Sell Stock II             | find all gap                  | O(N)/O(N)       1|
+
+
 
 ### sorting
 
 ### graph
 
-### dc
+
 
 https://codetop.cc/
 https://github.com/afatcoder/LeetcodeTop/blob/master/bytedance/backend.md
+https://github.com/103style/LeetCode
+https://docs.google.com/document/u/0/
+
+https://leetcode.com/problemset/all/?page=1&difficulty=EASY&topicSlugs=tree

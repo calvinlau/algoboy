@@ -9,7 +9,7 @@ import java.util.Stack;
  * Output: 1
  *
  * @author kevinliu
- * @Solution DFS
+ * @Solution BFS
  * 
  */
 public class MinimumAbsoluteDifferenceinBST {
